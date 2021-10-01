@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    body{
+      display: flex;
+    
+      
+      align-items: center;
+      justify-content: center;
+      padding: 150px;
+    
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .itemd{
+      /* text-align: left; */
+      padding: 50px;
+      height: 70vh;
+      width: 10vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: left;
+      font-size: 15px;
+      color: #ffff;
+      
+    }
+    span{
+      font-size: 20px;
+      font-weight: 600; 
+      font-family: 'Lexend Deca', sans-serif;
+
+    }
+    .suvs{
+      background-color:  hsl(184, 100%, 22%);
+    }
+    .sedan{
+      background-color: hsl(31, 77%, 52%);
+      border-bottom-left-radius:5px ;
+      border-top-left-radius:5px ;
+
+    }
+    .luxury{
+      background-color: hsl(179, 100%, 13%);
+      border-bottom-right-radius:5px ;
+      border-top-right-radius:5px ;
+    }
+    img{
+      width: 40%;
+    }
+    .btn{
+      width: 80%;
+      height: 5vh;
+      border-radius: 15px;
+      background-color: #ffff ;
+      border: 1px #fff solid;
+      
+    }
+    .sedan .btn{
+      color: hsl(31, 77%, 52%);
+    }
+    .suvs .btn{
+      color: hsl(184, 100%, 22%);
+    }
+    .luxury .btn{
+      color: hsl(179, 100%, 13%);
+    }
+    .btn:hover{
+      background-color: inherit;
+      color: #fff;
+      cursor: pointer;
+    }
+    @media (max-width:375px){
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      }
+      .itemd{
+      width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .luxury{
+        border-radius:0px 0px 5px 5px;
+      }
+      .sedan{
+        border-radius: 5px 5px 0 0 ;
+      }
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <div class='itemd sedan '>
+
+<img src='./images/icon-sedans.svg' />
+    <span>Sedans</span>
+    Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+    or on your next road trip.
+    
+  <button class="btn">Learn More </button>
+  </div>
+<div class='itemd suvs'>
+
+<img src='./images/icon-suvs.svg' />
+ <span> SUVs</span>
+  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+<button class="btn">Learn More </button>
+</div>
+<div class='itemd luxury'>
+
+<img src='./images/icon-luxury.svg' />
+  <span>Luxury</span>
+  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.
+<button class="btn">Learn More </button>
+</div>
+  
+  
+</body>
+</html>
